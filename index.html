@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora iOS</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="calculadora">
+ 
+    <div id="pantalla" class="pantalla">0</div>
+
+    
+    <div class="botones">
+     
+      <button class="btn-gris-claro" onclick="limpiar()">AC</button>
+      <button class="btn-gris-claro" onclick="borrarUno()">⌫</button>
+      <button class="btn-gris-claro" onclick="porcentaje()">%</button>
+      <button class="btn-naranja" onclick="operar('÷')">÷</button>
+
+      
+      <button class="btn-gris-oscuro" onclick="numero('7')">7</button>
+      <button class="btn-gris-oscuro" onclick="numero('8')">8</button>
+      <button class="btn-gris-oscuro" onclick="numero('9')">9</button>
+      <button class="btn-naranja" onclick="operar('×')">×</button>
+
+      <button class="btn-gris-oscuro" onclick="numero('4')">4</button>
+      <button class="btn-gris-oscuro" onclick="numero('5')">5</button>
+      <button class="btn-gris-oscuro" onclick="numero('6')">6</button>
+      <button class="btn-naranja" onclick="operar('-')">-</button>
+
+      <button class="btn-gris-oscuro" onclick="numero('1')">1</button>
+      <button class="btn-gris-oscuro" onclick="numero('2')">2</button>
+      <button class="btn-gris-oscuro" onclick="numero('3')">3</button>
+      <button class="btn-naranja" onclick="operar('+')">+</button>
+
+      
+      <button class="btn-gris-oscuro btn-cero" onclick="numero('0')">0</button>
+      <button class="btn-gris-oscuro" onclick="decimal()">.</button>
+      <button class="btn-naranja" onclick="calcular()">=</button>
+    </div>
+  </div>
+
+</body>
+</html>
